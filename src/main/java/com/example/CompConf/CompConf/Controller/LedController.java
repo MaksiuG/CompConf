@@ -25,7 +25,7 @@ public class LedController {
     @GetMapping("/get-all-leds")
     public Iterable<Led> getAllLeds(){logger.warn("Getting all the Leds");return ledMng.findAll();
     }
-    @GetMapping("/get-graphics-by-id")
+    @GetMapping("/get-leds-by-id")
     public Optional<Led> getLedsByid(@RequestParam Long id){
         return ledMng.findByLedrId(id);
     }
