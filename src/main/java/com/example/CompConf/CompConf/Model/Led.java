@@ -17,13 +17,13 @@ public class Led{
     private String model;
     private double price;
     private boolean avaliability;
-    private short rates;
+    private int rates;
 
     public Led() {
 
     }
 
-    public Led(Long ID, String brand, String model, double price, boolean avaliability, short rates) {
+    public Led(Long ID, String brand, String model, double price, boolean avaliability, int rates) {
         this.ID = ID;
         this.brand = brand;
         this.model = model;
@@ -72,11 +72,11 @@ public class Led{
         this.avaliability = avaliability;
     }
 
-    public short getRates() {
+    public int getRates() {
         return rates;
     }
 
-    public void setRates(short rates) {
+    public void setRates(int rates) {
         this.rates = rates;
     }
 }

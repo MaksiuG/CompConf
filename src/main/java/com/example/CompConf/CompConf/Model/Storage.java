@@ -14,12 +14,12 @@ public class Storage{
     private String model;
     private double price;
     private boolean avaliability;
-    private short rates;
+    private int rates;
 
     public Storage() {
     }
 
-    public Storage(Long id, String brand, String model, double price, boolean avaliability, short rates) {
+    public Storage(Long id, String brand, String model, double price, boolean avaliability, int rates) {
         this.id = id;
         this.brand = brand;
         this.model = model;
@@ -68,11 +68,11 @@ public class Storage{
         this.avaliability = avaliability;
     }
 
-    public short getRates() {
+    public int getRates() {
         return rates;
     }
 
-    public void setRates(short rates) {
+    public void setRates(int rates) {
         this.rates = rates;
     }
 }

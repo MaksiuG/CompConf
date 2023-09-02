@@ -14,7 +14,7 @@ public class PowerSupply{
     private String model;
     private double price;
     private boolean avaliability;
-    private short rates;
+    private int rates;
     /*
      Do more specification laterrr // done in documentation
      */
@@ -22,7 +22,7 @@ public class PowerSupply{
     public PowerSupply() {
     }
 
-    public PowerSupply(Long ID, String brand, String model, double price, boolean avaliability, short rates) {
+    public PowerSupply(Long ID, String brand, String model, double price, boolean avaliability, int rates) {
         this.ID = ID;
         this.brand = brand;
         this.model = model;
@@ -71,11 +71,11 @@ public class PowerSupply{
         this.avaliability = avaliability;
     }
 
-    public short getRates() {
+    public int getRates() {
         return rates;
     }
 
-    public void setRates(short rates) {
+    public void setRates(int rates) {
         this.rates = rates;
     }
 }

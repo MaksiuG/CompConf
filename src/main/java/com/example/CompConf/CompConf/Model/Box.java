@@ -18,12 +18,24 @@ public class Box{
     private String model;
     private double price;
     private boolean avaliability;
-    private short rates;
+    private int rates;
+
+    @ManyToOne
+    @JoinColumn(name = "computer_id")
+    private Computer computer;
+
+    public Computer getComputer() {
+        return computer;
+    }
+
+    public void setComputer(Computer computer) {
+        this.computer = computer;
+    }
 
     public Box() {
     }
 
-    public Box(Long ID, String brand, String model, double price, boolean avaliability, short rates) {
+    public Box(Long ID, String brand, String model, double price, boolean avaliability, int rates) {
         this.ID = ID;
         this.brand = brand;
         this.model = model;
@@ -72,11 +84,11 @@ public class Box{
         this.avaliability = avaliability;
     }
 
-    public short getRates() {
+    public int getRates() {
         return rates;
     }
 
-    public void setRates(short rates) {
+    public void setRates(int rates) {
         this.rates = rates;
     }
 }

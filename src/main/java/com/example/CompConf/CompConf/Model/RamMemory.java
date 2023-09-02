@@ -18,14 +18,14 @@ public class RamMemory {
     private String model;
     private double price;
     private boolean avaliability;
-    private short rates;
+    private int rates;
 
 
     public RamMemory() {
 
     }
 
-    public RamMemory(Long ID, String brand, String model, double price, boolean avaliability, short rates) {
+    public RamMemory(Long ID, String brand, String model, double price, boolean avaliability, int rates) {
         this.ID = ID;
         this.brand = brand;
         this.model = model;
@@ -74,11 +74,11 @@ public class RamMemory {
         this.avaliability = avaliability;
     }
 
-    public short getRates() {
+    public int getRates() {
         return rates;
     }
 
-    public void setRates(short rates) {
+    public void setRates(int rates) {
         this.rates = rates;
     }
 }
